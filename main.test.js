@@ -1,5 +1,15 @@
-import sum from './main';
+import isEvenOrOdd from './main';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('number is even', () => {
+
+  let output = isEvenOrOdd(8);
+
+  expect(output).toBe("Even");
+});
+
+test('number is odd', () => {
+
+  let output = isEvenOrOdd(5);
+
+  expect(output).toBe("Odd");
 });

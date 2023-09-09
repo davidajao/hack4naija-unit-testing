@@ -1,5 +1,14 @@
-const sum = (a, b) => {
-    return a + b;
+const isEvenOrOdd = (num) => {
+
+    if( num % 2 === 0){
+        return "Even";
+    }
+    
+    if( isNaN(num) ){
+        return "Error";
+    }
+
+    return "Odd";
 }
 
-export default sum;
+export default isEvenOrOdd;
